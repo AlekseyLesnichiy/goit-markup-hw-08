@@ -1,0 +1,23 @@
+.logo {
+  display: inline-block;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.192;
+  text-decoration: none;
+
+  &-color {
+    color: $accent-color;
+  }
+}
+.header-logo {
+  @extend .logo;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: $title-text-color;
+}
+.footer-logo {
+  @extend .logo;
+  color: $white-color;
+  margin-bottom: 20px;
+}

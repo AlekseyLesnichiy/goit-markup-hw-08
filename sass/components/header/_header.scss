@@ -1,0 +1,86 @@
+.header {
+  border-bottom: 1px solid $header-border;
+  background-color: $white-color;
+}
+.current-page::after {
+  @extend %currentPage;
+}
+.header__container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+}
+.navigate__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color 250ms $cubic;
+}
+
+.navigate {
+  display: flex;
+  &-list {
+    display: flex;
+    margin-left: 93px;
+  }
+  &__studio,
+  &__portfolio,
+  &__contacts {
+    @extend .navigate__link;
+    position: relative;
+
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $title-text-color;
+  }
+  &__mail,
+  &__phone {
+    @extend .navigate__link;
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $primary-text-color;
+  }
+  &__studio:hover,
+  &__studio:focus,
+  &__portfolio:hover,
+  &__portfolio:focus,
+  &__contacts:hover,
+  &__contacts:focus,
+  &__mail:hover,
+  &__mail:focus,
+  &__phone:hover,
+  &__phone:focus {
+    color: $accent-color;
+  }
+}
+.navigate-list .item:not(:last-child),
+.contact-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-list {
+  margin-left: auto;
+  display: flex;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}

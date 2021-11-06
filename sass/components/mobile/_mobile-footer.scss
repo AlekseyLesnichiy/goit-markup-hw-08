@@ -1,0 +1,204 @@
+.footer {
+  @extend %section-mobile;
+  background-color: $footer-bg-color;
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
+}
+.container-footer {
+  @extend %container-mobile;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+.footer-container__flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.footer-flex {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-bottom: 60px;
+    margin-left: 61px;
+  }
+}
+.footer__adress-list {
+  width: 232px;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 60px;
+  }
+
+  & .item:not(:last-child) {
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
+  }
+  &__adress {
+    color: $white-color;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+
+    transition: color 250ms $cubic;
+  }
+  &__mail,
+  &__phone {
+    line-height: 1.1875;
+    text-decoration: none;
+    color: $primary-text-color;
+    font-style: normal;
+
+    transition: color 250ms $cubic;
+  }
+  &__adress:focus,
+  &__adress:hover,
+  &__mail:hover,
+  &__mail:focus,
+  &__phone:hover,
+  &__phone:focus {
+    color: $accent-color;
+  }
+}
+
+.social-container {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  &__join {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white-color;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 5px;
+    margin-left: 165px;
+    margin-right: 29px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+    margin-top: 12px;
+    margin-right: 0px;
+  }
+}
+.social-list {
+  display: flex;
+  & .item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.circle {
+  @extend %circle;
+  color: $white-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+
+.submit-container {
+  width: 100%;
+  &__text {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+    margin-top: 12px;
+    margin-left: 93px;
+  }
+}
+.submit-container__form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
+  & input {
+    margin-top: 20px;
+    padding: 15px;
+    height: 50px;
+    width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2f303a;
+    color: rgba(255, 255, 255, 0.6);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+    }
+  }
+}
+.submit-button {
+  @extend %button;
+
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  padding: 10px 29px;
+  min-width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+
+  background-color: $accent-color;
+  color: $white-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-left: 10px;
+  }
+}

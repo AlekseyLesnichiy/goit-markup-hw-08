@@ -1,0 +1,61 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms $cubic;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleX(0.3);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scaleX(1);
+
+  transition: transform 250ms $cubic;
+}
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  border-radius: 50%;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $white-color;
+  color: #000000;
+  height: 30px;
+  width: 30px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+
+  transition: color 250ms $cubic;
+  &__icon {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    fill: currentColor;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

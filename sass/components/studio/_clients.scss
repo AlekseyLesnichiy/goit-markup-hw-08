@@ -1,0 +1,48 @@
+.section-clients {
+  @extend %section;
+  text-align: center;
+}
+.container-clients {
+  @extend %container;
+}
+.clients-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  color: $title-text-color;
+}
+.clients-list {
+  display: flex;
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__rectangle {
+    display: block;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+    color: $icon-color;
+    transition: color 250ms $cubic, border-color 250ms $cubic;
+  }
+  &__rectangle:hover,
+  &__rectangle:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+  &__logo-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+  }
+}
