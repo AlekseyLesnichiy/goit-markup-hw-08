@@ -1,14 +1,14 @@
 .hidden {
   @extend %hidden;
 }
-.section-projects {
+.projects__section {
   @extend %section-mobile;
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
-.container-projects {
+.projects__container {
   @extend %container-mobile;
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -20,7 +20,7 @@
     width: $desktop;
   }
 }
-.button-list {
+.button__list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
@@ -34,15 +34,15 @@
     margin-bottom: 50px;
     justify-content: center;
   }
-  & .item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 8px;
   }
-  & .item:nth-child(-n + 3) {
+  &__item:nth-child(-n + 3) {
     @media screen and (max-width: 767px) {
       margin-bottom: 15px;
     }
   }
-  &__item {
+  &__button {
     display: inline-block;
     border-radius: 4px;
     padding-left: 22px;
@@ -64,8 +64,8 @@
     transition: color 250ms $cubic, background-color 250ms $cubic,
       box-shadow 250ms $cubic;
   }
-  &__item:hover,
-  &__item:focus {
+  &__button:hover,
+  &__button:focus {
     background-color: $accent-color;
     color: $white-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -73,7 +73,7 @@
   }
 }
 
-.projects-list {
+.projects__list {
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -83,12 +83,12 @@
     display: flex;
     flex-wrap: wrap;
   }
-  & .item:not(:last-child) {
+  &__item:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
   }
-  & .item {
+  &__item {
     @media screen and (min-width: $tablet) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
@@ -106,7 +106,7 @@
     transform: translateY(0);
   }
 }
-.projects-list__image-hover {
+.projects__list__image-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -126,7 +126,7 @@
   }
 }
 
-.projects-list__image-content {
+.projects__list__image-content {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;

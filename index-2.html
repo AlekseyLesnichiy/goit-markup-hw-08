@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Document</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+
 </head>
 
 <body>
@@ -21,9 +23,9 @@
             <nav class="navigate">
                 <a class="navigate__header-logo" href="index.html"> <span class="logo-color">Web</span>Studio</a>
                 <ul class="navigate__list">
-                    <li class="navigate__item"><a class="navigate__studio current-page" href="index.html">Студия</a>
-                    </li>
-                    <li class="navigate__item"><a class="navigate__portfolio" href="portfolio.html">Портфолио</a></li>
+                    <li class="navigate__item"><a class="navigate__studio" href="index.html">Студия</a></li>
+                    <li class="navigate__item"><a class="navigate__portfolio current-page"
+                            href="portfolio.html">Портфолио</a></li>
                     <li class="navigate__item"><a class="navigate__contacts" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -47,332 +49,208 @@
         </div>
     </header>
     <main>
-        <section class="hero__section">
-            <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button data-modal-open class="hero__button" type="button">Заказать услугу</button>
-        </section>
-        <section class="advantages__section">
-            <div class="advantages__container">
-                <h2 class="advantages__title">Наши Преимущества</h2>
-                <ul class="advantages__icon-list">
-                    <li class="item">
-                        <a class="advantages__icon-list__rectangle" href="">
-                            <svg class="advantages__icon-list__icon" style="width: 70px;height:70px;">
-                                <use href="./images/sprite.svg#antenna"></use>
-                            </svg>
-                        </a>
+        <section class="projects__section">
+            <div class="projects__container">
+                <h1 class="hidden">Наши Проекты</h1>
+                <ul class="button__list">
+                    <li class="button__list__item"> <button class="button__list__button" type="button">Все</button>
                     </li>
-                    <li class="item">
-                        <a class="advantages__icon-list__rectangle" href="">
-                            <svg class="advantages__icon-list__icon" style="width: 70px;height:70px;">
-                                <use href="./images/sprite.svg#clock"></use>
-                            </svg>
-                        </a>
+                    <li class="button__list__item"> <button class="button__list__button"
+                            type="button">Веб-сайты</button>
                     </li>
-                    <li class="item">
-                        <a class="advantages__icon-list__rectangle" href="">
-                            <svg class="advantages__icon-list__icon" style="width: 70px;height:70px;">
-                                <use href="./images/sprite.svg#diagram"></use>
-                            </svg>
-                        </a>
+                    <li class="button__list__item"> <button class="button__list__button"
+                            type="button">Приложения</button>
                     </li>
-                    <li class="item">
-                        <a class="advantages__icon-list__rectangle" href="">
-                            <svg class="advantages__icon-list__icon" style="width: 70px;height:70px;">
-                                <use href="./images/sprite.svg#astronaut"></use>
-                            </svg>
-                        </a>
+                    <li class="button__list__item"> <button class="button__list__button" type="button">Дизайн</button>
                     </li>
-                </ul>
-                <ul class="advantages__text-list">
-                    <li class="item advantages">
-                        <h3 class="advantages__text-list__title"> Внимание к деталям</h3>
-                        <p class="advantages__text-list__text">Идейные соображения, а также начало повседневной работы
-                            по
-                            формированию позиции.</p>
-                    </li>
-                    <li class="item advantages">
-                        <h3 class="advantages__text-list__title"> Пунктуальность</h3>
-                        <p class="advantages__text-list__text">Задача организации, в особенности же рамки и место
-                            обучения
-                            кадров
-                            влечет за собой.</p>
-                    </li>
-                    <li class="item advantages">
-                        <h3 class="advantages__text-list__title"> Планирование</h3>
-                        <p class="advantages__text-list__text">Равным образом консультация с широким активом в
-                            значительной
-                            степени обуславливает.</p>
-                    </li>
-                    <li class="item advantages">
-                        <h3 class="advantages__text-list__title"> Современные технологии</h3>
-                        <p class="advantages__text-list__text">Значимость этих проблем настолько очевидна, что
-                            реализация
-                            плановых
-                            заданий.</p>
+                    <li class="button__list__item"> <button class="button__list__button"
+                            type="button">Маркетинг</button>
                     </li>
 
                 </ul>
-            </div>
-        </section>
-        <section class="samples__section">
-            <div class="samples__container">
-                <h2 class="samples__title">Чем мы занимаемся</h2>
-                <ul class="samples__list">
-                    <li class="samples__list__item">
+                <ul class="projects__list">
+                    <li class="projects__list__item">
                         <a href="">
-                            <div class="samples__list__image-container">
-                                <img class="image" src="images/laptop_picture.jpg" width="370" height="294"
-                                    alt="работа на ноутбуке">
-                                <div class="samples__list__description-field">
-                                    <p class="samples__list__description-field__text">Десктопные приложения</p>
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_1.jpg" width="370" height="294"
+                                    alt="Веб-сайт на ноутбуке">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
                                 </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name">Технокряк</h2>
+                                <p class="projects__list__image-content__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="samples__list__item">
+                    <li class="projects__list__item">
                         <a href="">
-                            <div class="samples__list__image-container">
-                                <img class="image" src="images/phone_picture.jpg" width="370" height="294"
-                                    alt="осмотр макета на ноутбуке">
-                                <div class="samples__list__description-field">
-                                    <p class="samples__list__description-field__text">Мобильные приложения</p>
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_2.jpg" width="370" height="294"
+                                    alt="Постер по баскетболу">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
                                 </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name">Постер <span class="span" lang="en">New
+                                        Orlean vs Golden Star</span></h2>
+                                <p class="projects__list__image-content__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="samples__list__item">
+                    <li class="projects__list__item">
                         <a href="">
-                            <div class="samples__list__image-container">
-                                <img class="image" src="images/ipad_picture.jpg" width="370" height="294"
-                                    alt="палитра цветов на планшете">
-                                <div class="samples__list__description-field">
-                                    <p class="samples__list__description-field__text">Дизайнерские решения</p>
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_3.jpg" width="370" height="294"
+                                    alt="Иконка приложения для ресторана">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
                                 </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name">Ресторан <span lang="en">Seafood</span>
+                                </h2>
+                                <p class="projects__list__image-content__text">Приложение</p>
                             </div>
                         </a>
                     </li>
-
-                </ul>
-            </div>
-        </section>
-        <section class="team__section">
-            <div class="team_container">
-                <h2 class="team__title">Наша команда</h2>
-                <ul class="team__list">
-
-                    <li class="team__list__item"><img class="image" src="images/ihor_demjanenko.jpg"
-                            alt="Игорь Демьяненко" width="270" height="260">
-                        <div class="employee__container">
-                            <h3 class="employee__container__title">Игорь Демьяненко</h3>
-                            <p class="employee__container__position" lang="en">Product Designer</p>
-                            <ul class="social-links__list">
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#instagram"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#twitter"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#facebook"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#linkedin"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="team__list__item"><img class="image" src="images/olha_repina.jpg" alt="Ольга Репина"
-                            width="270" height="260">
-                        <div class="employee__container">
-                            <h3 class="employee__container__title">Ольга Репина</h3>
-                            <p class="employee__container__position" lang="en">Frontend Developer</p>
-                            <ul class="social-links__list">
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#instagram"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#twitter"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#facebook"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#linkedin"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="team__list__item"><img class="image" src="images/nikolai_tarasov.jpg"
-                            alt="Николай Тарасов" width="270" height="260">
-                        <div class="employee__container">
-                            <h3 class="employee__container__title">Николай Тарасов</h3>
-                            <p class="employee__container__position" lang="en">Marketing</p>
-                            <ul class="social-links__list">
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#instagram"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#twitter"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#facebook"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#linkedin"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="team__list__item"><img class="image" src="images/mihail_yarmakov.jpg"
-                            alt="Михаил Ярмаков" width="270" height="260">
-                        <div class="employee__container">
-                            <h3 class="employee__container__title">Михаил Ермаков</h3>
-                            <p class="employee__container__position" lang="en">UI Designer</p>
-                            <ul class="social-links__list">
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#instagram"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#twitter"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#facebook"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                                <li class="social-links__list__item">
-                                    <a class="social-links__list__circle" href="">
-                                        <svg class="social-links__list__icon">
-                                            <use href="./images/sprite.svg#linkedin"></use>
-                                        </svg>
-
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </section>
-        <section class="clients__section">
-            <div class="clients_container">
-                <h2 class="clients__title">Постоянные клиенты</h2>
-                <ul class="clients__list">
-                    <li class="clients__list__item">
-                        <a class="clients__list__rectangle" href="">
-                            <svg class="clients__list__logo-icon">
-                                <use href="./images/sprite.svg#logo"></use>
-                            </svg>
+                    <li class="projects__list__item">
+                        <a href="">
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_4.jpg" width="370" height="294"
+                                    alt="Проект для наушников">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name">Проект <span lang="en">Prime</span></h2>
+                                <p class="projects__list__image-content__text">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
-                    <li class="clients__list__item">
-                        <a class="clients__list__rectangle" href="">
-                            <svg class="clients__list__logo-icon">
-                                <use href="./images/sprite.svg#logo_2"></use>
-                            </svg>
+                    <li class="projects__list__item">
+                        <a href="">
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_5.jpg" width="370" height="294"
+                                    alt="Проект для коробок">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name">Проект <span lang="en">Boxes</span></h2>
+                                <p class="projects__list__image-content__text">Приложение</p>
+                            </div>
                         </a>
                     </li>
-                    <li class="clients__list__item">
-                        <a class="clients__list__rectangle" href="">
-                            <svg class="clients__list__logo-icon">
-                                <use href="./images/sprite.svg#logo_3"></use>
-                            </svg>
+                    <li class="projects__list__item">
+                        <a href="">
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_6.jpg" width="370" height="294"
+                                    alt="Веб-сайт на моноблоке">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name" lang="en">Inspiration has no Borders
+                                </h2>
+                                <p class="projects__list__image-content__text">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
-                    <li class="clients__list__item">
-                        <a class="clients__list__rectangle" href="">
-                            <svg class="clients__list__logo-icon">
-                                <use href="./images/sprite.svg#logo_4"></use>
-                            </svg>
+                    <li class="projects__list__item">
+                        <a href="">
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_7.jpg" width="370" height="294"
+                                    alt="Разворот книги">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name">Издание <span lang="en">Limited
+                                        Edition</span></h2>
+                                <p class="projects__list__image-content__text">Дизайн</p>
+                            </div>
                         </a>
                     </li>
-                    <li class="clients__list__item">
-                        <a class="clients__list__rectangle" href="">
-                            <svg class="clients__list__logo-icon">
-                                <use href="./images/sprite.svg#logo_5"></use>
-                            </svg>
+                    <li class="projects__list__item">
+                        <a href="">
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_8.jpg" width="370" height="294"
+                                    alt="Маркетинговый проект">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name">Проект <span lang="en">LAB</span></h2>
+                                <p class="projects__list__image-content__text">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
-                    <li class="clients__list__item">
-                        <a class="clients__list__rectangle" href="">
-                            <svg class="clients__list__logo-icon">
-                                <use href="./images/sprite.svg#logo_6"></use>
-                            </svg>
+                    <li class="projects__list__item">
+                        <a href="">
+                            <div class="projects__list__image-thumb">
+                                <img class="image" src="./images/project_9.jpg" width="370" height="294"
+                                    alt="Приложение для ноутбука">
+                                <div class="projects__list__image-hover">
+                                    <p class="projects__list__image-hover__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании
+                                        используют эту
+                                        платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__list__image-content">
+                                <h2 class="projects__list__image-content__name">Growing Business</h2>
+                                <p class="projects__list__image-content__text">Приложение</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -390,7 +268,8 @@
                                     href="https://www.google.ca/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                                     target="_blank"> г. Киев, пр-т Леси Украинки, 26 </a></li>
                             <li class="footer__list__item"><a class="footer__list__phone" href="tel:+380961111111">+38
-                                    096 111 11 11</a></li>
+                                    096
+                                    111 11 11</a></li>
                             <li class="footer__list__item"><a class="footer__list__mail"
                                     href="mailto:info@example.com">info@example.com</a>
                             </li>
@@ -451,64 +330,6 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button data-modal-close type="button" class="modal__close-button">
-                <svg class="modal__close-button__icon">
-                    <use href="./images/sprite.svg#close"></use>
-                </svg>
-            </button>
-            <div role="group" class="form__container">
-                <b class="form__title"> Оставьте свои данные, мы вам перезвоним</b>
-                <form>
-                    <div class="form__field">
-                        <label class="form__field__label-name" for="name">Имя</label>
-                        <input class="form__field__input-name" type="text" name="name" id="name" autocomplete="off">
-                        <div class="form__field__image-input">
-                            <svg class="form__field__input-icon">
-                                <use href="./images/sprite.svg#form_name"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="form__field">
-                        <label class="form__field__label-tel" for="tel">Телефон</label>
-                        <input class="form__field__input-tel" type="tel" name="tel" id="tel">
-                        <div class="form__field__image-input">
-                            <svg class="form__field__input-icon">
-                                <use href="./images/sprite.svg#form_phone"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="form__field">
-                        <label class="form__field__label-mail" for="mail">Почта</label>
-                        <input class="form__field__input-mail" type="email" name="mail" id="mail">
-                        <div class="form__field__image-input">
-                            <svg class="form__field__input-icon">
-                                <use href="./images/sprite.svg#form_mail"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="form__field">
-                        <label class="label-comment" for="comment">Комментарий</label>
-                        <textarea class="form__field__comment" name="comment" id="comment"
-                            placeholder="Введите текст"></textarea>
-                    </div>
-
-                    <div class="form__field__policy ">
-                        <label class="form__field__label-policy">
-                            <input class="form__field__input-checkbox" type="checkbox" name="policy">
-                            <span class="form__field__check-icon"></span>
-                            Соглашаюсь с рассылкой и принимаю <a href="" class="form__field__policy-link">Условия
-                                договора</a>
-                        </label>
-                    </div>
-                    <button type="submit" class="modal-submit-button">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <script src="./js/modal.js"></script>
-
 </body>
 
 </html>
