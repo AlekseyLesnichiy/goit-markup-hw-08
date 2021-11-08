@@ -11,7 +11,7 @@
     text-align: start;
   }
 }
-.container-footer {
+.footer__container {
   @extend %container-mobile;
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -23,7 +23,7 @@
     width: $desktop;
   }
 }
-.footer-container__flex {
+.footer__container__flex {
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -33,19 +33,21 @@
     flex-wrap: nowrap;
   }
 }
-.footer-flex {
+.footer-flex__adress {
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-bottom: 60px;
     margin-left: 61px;
   }
 }
-.footer__adress-list {
+.footer__adress__list {
   width: 232px;
   @media screen and (min-width: $mobile) {
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  & .item:not(:last-child) {
+  &__item:not(:last-child) {
     @media screen and (min-width: $mobile) {
       margin-bottom: 8px;
     }
@@ -83,7 +85,7 @@
   }
 }
 
-.social-container {
+.social__container {
   width: 206px;
   margin-left: auto;
   margin-right: auto;
@@ -102,7 +104,6 @@
   @media screen and (min-width: $tablet) {
     margin-top: 5px;
     margin-left: 165px;
-    margin-right: 29px;
   }
   @media screen and (min-width: $desktop) {
     margin-left: 70px;
@@ -110,28 +111,27 @@
     margin-right: 0px;
   }
 }
-.social-list {
+.social__list {
   display: flex;
-  & .item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 10px;
   }
-}
-
-.circle {
-  @extend %circle;
-  color: $white-color;
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
+  &__circle {
+    @extend %circle;
+    color: $white-color;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
   }
-  &__icon {
+  &__circle__icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
   }
 }
 
-.submit-container {
+.submit__container {
   width: 100%;
   &__text {
     font-size: 14px;
@@ -147,7 +147,7 @@
     margin-left: 93px;
   }
 }
-.submit-container__form {
+.submit__container__form {
   @media screen and (min-width: $desktop) {
     display: flex;
   }
@@ -168,7 +168,7 @@
     }
   }
 }
-.submit-button {
+.submit__button {
   @extend %button;
 
   display: flex;

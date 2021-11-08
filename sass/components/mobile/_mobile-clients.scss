@@ -1,4 +1,4 @@
-.section-clients {
+.clients__section {
   @extend %section-mobile;
   text-align: center;
   @media screen and (min-width: $desktop) {
@@ -6,7 +6,7 @@
     padding-bottom: 94px;
   }
 }
-.container-clients {
+.clients_container {
   @extend %container-mobile;
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -18,7 +18,7 @@
     width: $desktop;
   }
 }
-.clients-title {
+.clients__title {
   margin-bottom: 30px;
 
   font-weight: 700;
@@ -27,7 +27,7 @@
 
   color: $title-text-color;
 }
-.clients-list {
+.clients__list {
   @media screen and (min-width: $mobile) {
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +39,7 @@
     margin: 0;
   }
 
-  & .item {
+  &__item {
     @media screen and (min-width: $mobile) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
@@ -54,7 +54,7 @@
     }
   }
 
-  & .item:not(:last-child) {
+  &__item:not(:last-child) {
     @media screen and (min-width: $desktop) {
       margin-right: 30px;
     }

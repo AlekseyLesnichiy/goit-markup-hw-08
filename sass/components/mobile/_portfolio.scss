@@ -1,9 +1,6 @@
 .hidden {
   @extend %hidden;
 }
-.image {
-  @extend %image;
-}
 .section-projects {
   @extend %section-mobile;
   @media screen and (min-width: $desktop) {

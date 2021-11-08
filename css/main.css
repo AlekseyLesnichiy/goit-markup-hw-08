@@ -355,12 +355,6 @@ template {
   background-color: #ffffff;
 }
 
-.image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .current-page::after {
   content: "";
   display: block;
@@ -433,6 +427,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   border-bottom: 1px solid #eeeeee;
   background-color: #ffffff;
@@ -447,7 +447,7 @@ a {
           align-items: center;
 }
 
-.navigate__link, .navigate__studio, .navigate__portfolio, .navigate__contacts, .navigate__mail, .navigate__phone {
+.navigate__link, .navigate__studio, .navigate__portfolio, .navigate__contacts, .navigate__contact-list__mail, .navigate__contact-list__phone {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -461,7 +461,7 @@ a {
   display: flex;
 }
 
-.navigate-list {
+.navigate__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,7 +477,27 @@ a {
   color: #212121;
 }
 
-.navigate__mail, .navigate__phone {
+.navigate__studio:hover, .navigate__studio:focus, .navigate__portfolio:hover, .navigate__portfolio:focus, .navigate__contacts:hover, .navigate__contacts:focus {
+  color: #2196f3;
+}
+
+.navigate__item:not(:last-child),
+.navigate__contact-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigate__contact-list {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigate__contact-list__mail:hover, .navigate__contact-list__mail:focus, .navigate__contact-list__phone:hover, .navigate__contact-list__phone:focus {
+  color: #2196f3;
+}
+
+.navigate__contact-list__mail, .navigate__contact-list__phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,22 +509,6 @@ a {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
-}
-
-.navigate__studio:hover, .navigate__studio:focus, .navigate__portfolio:hover, .navigate__portfolio:focus, .navigate__contacts:hover, .navigate__contacts:focus, .navigate__mail:hover, .navigate__mail:focus, .navigate__phone:hover, .navigate__phone:focus {
-  color: #2196f3;
-}
-
-.navigate-list .item:not(:last-child),
-.contact-list .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contact-list {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .mail-icon {
@@ -521,7 +525,7 @@ a {
   margin-right: 10px;
 }
 
-.logo, .header-logo, .footer-logo {
+.logo, .navigate__header-logo, .footer__logo {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -533,13 +537,13 @@ a {
   color: #2196f3;
 }
 
-.header-logo {
+.navigate__header-logo {
   padding-top: 24px;
   padding-bottom: 25px;
   color: #212121;
 }
 
-.footer-logo {
+.footer__logo {
   color: #ffffff;
   margin-bottom: 20px;
 }

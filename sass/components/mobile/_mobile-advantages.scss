@@ -1,11 +1,11 @@
-.section-advantages {
+.advantages__section {
   @extend %section-mobile;
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
-.container-advantages {
+.advantages__container {
   @extend %container-mobile;
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -17,12 +17,9 @@
     width: $desktop;
   }
 }
-.image {
-  @extend %image;
-}
 
 .advantages__list {
-  & .item:not(:last-child) {
+  &__item:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
@@ -36,7 +33,7 @@
     display: flex;
   }
 
-  & .item {
+  &__item {
     @media screen and (min-width: $tablet) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;

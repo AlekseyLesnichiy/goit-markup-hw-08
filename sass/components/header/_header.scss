@@ -20,7 +20,7 @@
 
 .navigate {
   display: flex;
-  &-list {
+  &__list {
     display: flex;
     margin-left: 93px;
   }
@@ -37,6 +37,29 @@
 
     color: $title-text-color;
   }
+
+  &__studio:hover,
+  &__studio:focus,
+  &__portfolio:hover,
+  &__portfolio:focus,
+  &__contacts:hover,
+  &__contacts:focus {
+    color: $accent-color;
+  }
+}
+.navigate__item:not(:last-child),
+.navigate__contact-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigate__contact-list {
+  margin-left: auto;
+  display: flex;
+  &__mail:hover,
+  &__mail:focus,
+  &__phone:hover,
+  &__phone:focus {
+    color: $accent-color;
+  }
   &__mail,
   &__phone {
     @extend .navigate__link;
@@ -50,26 +73,6 @@
 
     color: $primary-text-color;
   }
-  &__studio:hover,
-  &__studio:focus,
-  &__portfolio:hover,
-  &__portfolio:focus,
-  &__contacts:hover,
-  &__contacts:focus,
-  &__mail:hover,
-  &__mail:focus,
-  &__phone:hover,
-  &__phone:focus {
-    color: $accent-color;
-  }
-}
-.navigate-list .item:not(:last-child),
-.contact-list .item:not(:last-child) {
-  margin-right: 50px;
-}
-.contact-list {
-  margin-left: auto;
-  display: flex;
 }
 
 .mail-icon {

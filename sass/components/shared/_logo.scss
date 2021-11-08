@@ -10,13 +10,13 @@
     color: $accent-color;
   }
 }
-.header-logo {
+.navigate__header-logo {
   @extend .logo;
   padding-top: 24px;
   padding-bottom: 25px;
   color: $title-text-color;
 }
-.footer-logo {
+.footer__logo {
   @extend .logo;
   color: $white-color;
   margin-bottom: 20px;

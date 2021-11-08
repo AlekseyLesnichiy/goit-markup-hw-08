@@ -3,9 +3,7 @@
   background-color: $button-primary-color;
   text-align: center;
 }
-.image {
-  @extend %image;
-}
+
 .container-team {
   @extend %container;
 }
