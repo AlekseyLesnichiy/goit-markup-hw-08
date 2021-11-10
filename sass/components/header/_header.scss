@@ -1,9 +1,13 @@
 .header {
   border-bottom: 1px solid $header-border;
   background-color: $white-color;
+  position: relative;
 }
 .current-page::after {
   @extend %currentPage;
+}
+.header__container__flex {
+  display: flex;
 }
 .header__container {
   @extend %container;

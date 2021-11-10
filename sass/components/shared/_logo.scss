@@ -1,6 +1,5 @@
 .logo {
   display: inline-block;
-
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.192;
@@ -12,8 +11,6 @@
 }
 .navigate__header-logo {
   @extend .logo;
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: $title-text-color;
 }
 .footer__logo {

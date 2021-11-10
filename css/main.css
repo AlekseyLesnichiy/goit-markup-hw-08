@@ -436,6 +436,13 @@ img {
 .header {
   border-bottom: 1px solid #eeeeee;
   background-color: #ffffff;
+  position: relative;
+}
+
+.header__container__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__container {
@@ -538,8 +545,6 @@ img {
 }
 
 .navigate__header-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: #212121;
 }
 
