@@ -30,12 +30,12 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero__container {
-    background-image: url(./images/mobile_hero@2.jpg);
+    background-image: url("./images/mobile_hero@2.jpg");
     @media screen and (min-width: $tablet) {
-      background-image: url(./images/tablet_hero@2.jpg);
+      background-image: url("./images/tablet_hero@2.jpg");
     }
     @media screen and (min-width: $desktop) {
-      background-image: url(./images/hero@2.jpg);
+      background-image: url("./images/hero@2.jpg");
     }
   }
 }
