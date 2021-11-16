@@ -14,32 +14,11 @@
     ),
     url("../images/mobile_hero.jpg");
   background-repeat: no-repeat;
-  background-size: 480px 400px;
-  @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/tablet_hero.jpg");
-    background-size: 768px 400px;
-  }
-  @media screen and (min-width: $desktop) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/hero.jpg");
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-size: 1600px 600px;
-  }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero__container {
+  background-size: cover;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -52,7 +31,17 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/tablet_hero@2.jpg");
+        url("../images/tablet_hero.jpg");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("../images/tablet_hero@2.jpg");
+      }
     }
     @media screen and (min-width: $desktop) {
       background-image: linear-gradient(
@@ -60,7 +49,19 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/hero@2.jpg");
+        url("../images/hero.jpg");
+      padding-top: 200px;
+      padding-bottom: 200px;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("../images/hero@2.jpg");
+      }
     }
   }
 }

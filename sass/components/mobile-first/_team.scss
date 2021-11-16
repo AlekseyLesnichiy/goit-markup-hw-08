@@ -64,19 +64,10 @@
   }
 }
 .employee__container {
-  padding-top: 30px;
-  padding-bottom: 24px;
-  padding-right: 122px;
-  padding-left: 122px;
-  @media screen and (min-width: $tablet) {
-    padding-top: 30px;
-    padding-bottom: 24px;
-    padding-right: 74px;
-    padding-left: 74px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding: 30px 32px;
-  }
+  padding: 30px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__title {
     margin-bottom: 10px;
 
