@@ -600,6 +600,10 @@ img {
   }
 }
 
+.samples__container {
+  width: 1200px;
+}
+
 @media screen and (max-width: 1199px) {
   .samples__container {
     display: none;
@@ -1047,7 +1051,7 @@ img {
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer {
     text-align: center;
   }
@@ -1245,6 +1249,12 @@ img {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .submit__container__form input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1937,9 +1947,6 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-  .navigate__contact-list {
-    margin-top: 306px;
-  }
   .navigate__contact-list__phone {
     font-weight: 500;
     font-size: 34px;

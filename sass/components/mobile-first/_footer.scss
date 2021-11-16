@@ -1,7 +1,7 @@
 .footer {
   @extend %section-mobile;
   background-color: $footer-bg-color;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
   @media screen and (min-width: $desktop) {
@@ -157,6 +157,9 @@
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    @media screen and (min-width: $tablet) {
+      width: 450px;
+    }
     @media screen and (min-width: $desktop) {
       width: 358px;
     }
