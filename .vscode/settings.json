@@ -17,6 +17,7 @@
     ],
     "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.autoprefix": [
-        null
+        "> 1%",
+        "last 2 versions"
     ]
 }

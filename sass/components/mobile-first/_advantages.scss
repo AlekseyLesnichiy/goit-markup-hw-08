@@ -43,19 +43,18 @@
     }
   }
   &__rectangle {
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
     margin-bottom: 30px;
     background-color: $button-primary-color;
-    padding: 25px 190px;
+
     @media screen and (min-width: $tablet) {
       width: 354px;
-      padding: 25px 142px;
     }
     @media screen and (min-width: $desktop) {
       width: 270px;
-      padding: 25px 100px;
     }
   }
   &__icon:hover,
