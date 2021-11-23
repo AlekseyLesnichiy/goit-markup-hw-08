@@ -31,7 +31,9 @@
     transition: color 250ms $cubic;
   }
   &__policy-link {
+    margin-left: 3px;
     color: $accent-color;
+    text-decoration: underline;
   }
   &__label-policy {
     display: inline-block;

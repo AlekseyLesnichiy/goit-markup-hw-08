@@ -1720,7 +1720,9 @@ img {
 }
 
 .form__field__policy-link {
+  margin-left: 3px;
   color: #2196f3;
+  text-decoration: underline;
 }
 
 .form__field__label-policy {
