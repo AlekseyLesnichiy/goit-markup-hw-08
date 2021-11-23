@@ -11,6 +11,8 @@
 .form__field {
   position: relative;
   margin-bottom: 10px;
+  text-align: start;
+
   &__policy {
     margin-bottom: 30px;
     display: flex;
@@ -58,17 +60,11 @@
   letter-spacing: 0.06em;
   line-height: 1.87;
   font-weight: 700;
-  margin-left: 85px;
-  margin-right: 85px;
 
   transition: background-color 250ms $cubic;
   &:hover,
   &:focus {
     background-color: #188ce8;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-left: 124px;
-    margin-right: 124px;
   }
 }
 
