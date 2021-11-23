@@ -27,7 +27,7 @@
 .navigate {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     padding-top: 10px;
     padding-bottom: 10px;
     justify-content: space-between;
@@ -64,7 +64,7 @@
   &__studio,
   &__portfolio,
   &__contacts {
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 767px) {
       color: $title-text-color;
     }
     @media screen and (min-width: $tablet) {
@@ -87,7 +87,7 @@
   }
 }
 .navigate__contact-list {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     margin-top: 306px;
     &__phone {
       font-weight: 500;
@@ -165,7 +165,7 @@
 }
 .navigate__social-list {
   display: none;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     display: block;
     display: flex;
     &__item:not(:last-child) {
@@ -189,7 +189,7 @@
 .icon-cross,
 .icon-menu {
   display: none;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     fill: currentColor;
     display: block;
   }
@@ -197,7 +197,7 @@
 .menu-button {
   @extend %button;
   display: none;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     display: block;
     background-color: transparent;
     margin: 0;
@@ -222,7 +222,7 @@
   }
 }
 .menu-container {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     top: 0;
