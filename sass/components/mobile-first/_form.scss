@@ -39,10 +39,14 @@
     display: inline-block;
     display: flex;
 
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
     align-items: center;
+    @media screen and (min-width: 380px) {
+      font-size: 12px;
+      letter-spacing: 0.03em;
+    }
     @media screen and (min-width: $desktop) {
       font-size: 14px;
       line-height: 1.71;

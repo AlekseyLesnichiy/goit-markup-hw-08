@@ -39,9 +39,8 @@
   transition: transform 250ms $cubic;
   @media screen and (max-width: 1199px) {
     width: calc(100% - 30px);
-    height: calc(100% - 187px);
+    height: 609px;
     max-width: 450px;
-    max-height: 609px;
   }
   @media screen and(min-width: $desktop) {
     width: 528px;
